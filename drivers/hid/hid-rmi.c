@@ -1406,9 +1406,9 @@ static struct hid_driver rmi_driver = {
 	.input_mapping		= rmi_input_mapping,
 	.input_configured	= rmi_input_configured,
 #ifdef CONFIG_PM
-	.suspend		= rmi_suspend,
-	.resume			= rmi_post_resume,
-	.reset_resume		= rmi_post_reset,
+	/* .suspend		= rmi_suspend, */
+	/* .resume			= rmi_post_resume, */
+	/* .reset_resume		= rmi_post_reset, */
 #endif
 };
 
